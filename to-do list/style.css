@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+} 
+
+html, body {
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #fc8814, rgb(39, 39, 114)) ;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.todo{
+    background-color: whitesmoke;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto 20px;
+    padding: 40px;
+    border-radius: 40px;
+}
+.todo h2{
+    margin-bottom: 12px;
+    text-align: center;
+    color: rgb(39, 39, 114);
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ebeef3;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    font-size: 14px;
+}
+
+button{
+    border: none;
+    border-radius: 30px;
+    background-color: #fc8814;
+    color: #fff;
+    padding: 16px 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    padding: 12px 30px;
+    position: relative;
+    
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/arrows-160/96/uncheckedV_circle-512.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 10px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZps9D4tNxvS8iNOliIVWI0uErJjRiIPyfWA&s');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    left: 0;
+    top: 10px;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    top: 12px;
+    text-align: center;
+}
+
+ul li span:hover
+{
+    background-color: #e2e6ec ;
+    border-radius: 40%;
+}
+
+
+
