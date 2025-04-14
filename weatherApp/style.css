@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+
+body{
+  height: 100%;
+  overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(140deg, #1b1d49,#226068);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); 
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    
+}
+
+#searchPortion{
+    display: flex;
+    margin-right: 30px;
+    border-radius: 30px;
+    gap: 10px;
+
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    background-color: #daf9fd ;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.weatherContent{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        flex-wrap: wrap;  
+        padding: 20px;
+        
+}
+
+#left {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  #left img {
+    width: 180px;
+    margin-bottom: 40px;
+  }
+  
+  #left p{
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  #left h1{
+    margin-bottom: 35px;
+  }
+
+  #left h4{
+    margin-bottom: 25px;
+  }
+  
+  #right {
+    flex: 2;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+  }
+
+  .grid{
+    background: rgba(105, 133, 155, 0.2);
+    padding: 20px;
+    height: 200px;
+  }
+
+  #upper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #lower{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #right h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  
